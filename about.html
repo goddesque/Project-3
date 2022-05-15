@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&effect=neon&" rel="stylesheet">
         <script src="https://kit.fontawesome.com/af5e581bb7.js" crossorigin="anonymous"></script>
+        <script src="popscript.js" defer></script>
     </head>
         
     <body>
@@ -21,6 +22,42 @@
         <header>
             <h1 class="font-effect-neon">Claire's HQ</h1>
         </header>
+        </div>
+        
+         <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Who is visiting my site?</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form id="surveyForm" action="/action_page.php">
+                      
+                        <label for="opt1">Instructor</label>
+                        <input class="ins" name="option" value="Instructor" type="radio"><br> 
+                        
+                        <label for="opt2">Student</label>
+                        <input class="stu" name="option" value="Student" type="radio"><br>
+                        
+                        <label for="opt3">Friend</label>
+                        <input class="fri" name="option" value="Friend" type="radio"><br>
+                        
+                        <label for="opt4">Employer</label>
+                        <input class="emp" name="option" value="Employer" type="radio"><br>
+                        
+                        <label for="opt5">Other</label>
+                        <input class="oth" name="option" value="Other" type="radio">  
+                    
+                  </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn ">Save</button>
+              </div>
+            </div>
+          </div>
         </div>
             
         <div class="container">
@@ -81,10 +118,17 @@
         
         <div class="container">
         <footer>
+            
             <p>Email: <a href="mailto:tumaclaire@gmail.com">tumaclaire@gmail.com</a>
             Last updated on
             <time datetime="2022-05-10">May 10 2022</time>
             </p>
+            
+             <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Take a survey!
+            </button>
+            
         </footer>
         </div>
     

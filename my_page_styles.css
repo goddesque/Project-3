@@ -34,11 +34,6 @@ my webpage css
         color: mediumpurple;
     }
 
-    div.col
-    {
-
-    }
-
     div.progress-bar
     {
         background-color: plum;
@@ -109,17 +104,79 @@ my webpage css
 
      footer
     {
-        
         background-color: thistle;
-        
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
     
     footer > p 
     {
-        margin-left: 3%;
-        margin-right: 3%;
+        text-align: center;
     }
 
+    /* modal */
+
+    button.btn
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: lemonchiffon;
+        background-color: plum;
+    }
+
+    button.btn:hover, button.btn:active
+    {
+        background-color: violet;
+        color: lemonchiffon;
+    }
+
+    div.modal-body, div.modal-header, div.modal-footer
+    {
+        background-color: rgb(255, 214, 237);
+        color: lightcoral;
+    }
+
+    input[type=radio]
+    {
+        float: left;
+        clear: none;
+        width: auto;
+    }
+
+    input.ins
+    {
+        margin: 3px 0px 0px 30px;
+    }
+
+    input.stu
+    {
+        margin: 3px 0px 0px 40px;
+    }
+
+    input.fri
+    {
+        margin: 3px 0px 0px 52px;
+    }
+
+    input.emp
+    {
+        margin: 3px 0px 0px 32px;
+    }
+
+    input.oth
+    {
+        margin: 3px 0px 0px 56px;
+    }
+
+    label
+    {
+        float: left;
+        display: block;
+        clear: none;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
 /* slideshow */
 

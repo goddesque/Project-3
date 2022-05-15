@@ -12,10 +12,47 @@
         <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&effect=neon&" rel="stylesheet">
         <script src="https://kit.fontawesome.com/af5e581bb7.js" crossorigin="anonymous"></script>
+        <script src="popscript.js" defer></script>
     </head>
         
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
+         <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Who is visiting my site?</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form id="surveyForm" action="/action_page.php">
+                      
+                        <label for="opt1">Instructor</label>
+                        <input class="ins" name="option" value="Instructor" type="radio"><br> 
+                        
+                        <label for="opt2">Student</label>
+                        <input class="stu" name="option" value="Student" type="radio"><br>
+                        
+                        <label for="opt3">Friend</label>
+                        <input class="fri" name="option" value="Friend" type="radio"><br>
+                        
+                        <label for="opt4">Employer</label>
+                        <input class="emp" name="option" value="Employer" type="radio"><br>
+                        
+                        <label for="opt5">Other</label>
+                        <input class="oth" name="option" value="Other" type="radio">  
+                    
+                  </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn ">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
         
         <div class="container">
         <header>
@@ -139,19 +176,19 @@
                             <h5>Dog Bather</h5>
                             <i class="fa-solid fa-calendar-days"></i>
                             2016-2018<br>
-                            Anim jowl pork belly ground round pastrami ex dolor flank shoulder in proident boudin turducken beef ribs ullamco.
+                            I bathed, brushed, dried, and walked dogs. Also petted and kissed the dogs.
                         </li>
                         <li class="list-group-item">
                             <h5>Food Service</h5>
                             <i class="fa-solid fa-calendar-days"></i>
                             2018-present<br>
-                            Cow cillum est bresaola ham hock fugiat ground round short loin pork loin pork belly porchetta deserunt venison beef adipisicing. Tri-tip ullamco consectetur ball tip fugiat shank tail leberkas turducken.
+                            I work at the Plaza Inn at Disneyland. I serve food to the guests. Other duties I have are: stocking, cleaning, and taking special orders.
                         </li>
                         <li class="list-group-item">
                             <h5>Software Developer</h5>
                             <i class="fa-solid fa-calendar-days"></i>
                             future<br>
-                            Meatloaf sausage strip steak irure venison, filet mignon fatback ribeye esse. Cillum proident buffalo aliquip tail tempor. Ball tip fugiat ham hock do dolore, incididunt ad tri-tip.
+                            I hope to work in software development after I finish my degree. Game design is one of my interest, but I want to work on games as side projects. I want to do general developing as main job.
                         </li>
                       </ul>
                     </div>
@@ -166,19 +203,19 @@
                             <h5>Long Beach Polytechnic Highschool</h5>
                             <i class="fa-solid fa-calendar-days"></i>
                             2009-2013<br>
-                            Kielbasa ham cow, biltong irure tail non voluptate andouille est short ribs velit. Pork belly proident veniam, esse incididunt ut jowl prosciutto culpa qui exercitation consectetur eiusmod id in.
+                            I was in the P.A.C.E. program at Poly. It is a program for excelerated classes. I also completed several A.P. courses.
                         </li>
                         <li class="list-group-item">
                             <h5>Cerritos  College</h5>
                             <i class="fa-solid fa-calendar-days"></i>
                             2013-present<br>
-                            Esse beef ribs irure ipsum short ribs, spare ribs aliquip pariatur pork belly non. Commodo leberkas turkey exercitation do flank nulla nisi officia dolor non pork belly pancetta.
+                            I am still working on my A.A. degree in computer science, after which I will transfer to complete my B.S.
                         </li>
                         <li class="list-group-item">
                             <h5>CSULB</h5>
                             <i class="fa-solid fa-calendar-days"></i>
                             future<br>
-                            Swine elit laborum, voluptate aliquip ham ham hock ribeye incididunt anim. Ut brisket frankfurter, occaecat culpa alcatra sirloin reprehenderit tempor flank.
+                            I am planning to transfer and attend CSULB in the future to complete my computer science degree.
                         </li>
                       </ul>
                     </div>
@@ -188,10 +225,17 @@
        
         <div class="container">
         <footer>
+            
             <p>Email: <a href="mailto:tumaclaire@gmail.com">tumaclaire@gmail.com</a>
             Last updated on
             <time datetime="2022-05-10">May 10 2022</time>
             </p>
+            
+             <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Take a survey!
+            </button>
+            
         </footer>
         </div>
     
